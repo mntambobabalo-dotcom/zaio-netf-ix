@@ -3,32 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
+    <title>Netflix Zaio Clone</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="bg">
+    <header>
+        <div class="bg">
 
-        <div class="top-bar">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
-                 alt="Netflix Logo" 
-                 class="logo">
-            <button class="sign-in">Sign In</button>
-        </div>
-
-        <div class="header">
-            <h2>Unlimited Movies, TV Shows & More</h2>
-            <h5>Starts at R59/month. Cancel anytime.</h5>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-
-            <div class="email-box">
-                <input type="email" placeholder="Email Address" class="email-input">
-                <button class="get-started">Get Started</button>
+            <div class="top-bar">
+                <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+                    alt="Netflix Logo"
+                    class="logo"
+                >
+                <button class="sign-in">Sign In</button>
             </div>
+
+            <div class="header">
+                <h1>Unlimited Movies, TV Shows & More</h1>
+                <h3>Starts at R59/month. Cancel anytime.</h3>
+                <p>
+                    Ready to watch? Enter your email to create or restart your membership.
+                </p>
+
+                <div class="email-box">
+                    <input 
+                        type="email" 
+                        placeholder="Email Address"
+                        class="email-input"
+                    >
+                    <button class="get-started">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="trending-section">
+           <h2>Trending Now</h2>
+
+            <section class="trending-now">
+                <div id="show1" class="card"><span>1</span></div>
+                <div id="show2" class="card"><span>2</span></div>
+                <div id="show3" class="card"><span>3</span></div>
+                <div id="show4" class="card"><span>4</span></div>
+                <div id="show5" class="card"><span>5</span></div>
+                <div id="show6" class="card"><span>6</span></div>
+            </section>
+        
         </div>
 
-    </div>
+
+        <div class="more-reasons">
+            <h1>More Reasons to Join</h1>
+
+            <section class="reasons-cards">
+                <div class="reason-card">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="TV Icon">
+                    <h3>Enjoy on your TV.</h3>
+                    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Download your shows to watch offline.</h3>
+                    <p>Save your favorites easily and always have something to watch.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Watch everywhere.</h3>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- FAQ section added for common questions -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>What is Netflix?</summary>
+                <p>Netflix is a streaming service with movies and shows online.</p>
+            </details>
+
+            <details>
+                <summary>How much does Netflix cost?</summary>
+                <p>Plans start from X per month depending on your region.</p>
+            </details>
+
+            <details>
+                <summary>Where can I watch?</summary>
+                <p>Watch anywhere, anytime on an internet-connected device.</p>
+            </details>
+
+            <details>
+                <summary>How do I cancel?</summary>
+                <p>Netflix is flexible. You can easily cancel your account online in two clicks. 
+                    There are no cancellation fees – start or stop your account anytime</p>
+            </details>
+        </section>
+
+    </main>
 
 </body>
 </html>
